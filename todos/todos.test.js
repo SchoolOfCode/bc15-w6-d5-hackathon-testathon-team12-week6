@@ -102,3 +102,9 @@ test("	DELETE /api/todos/NONEXISTENT_ID", async function () {
   // assert that there's a Content-Type response header which contains `application/json`
   expect(response.header["content-type"]).toMatch("application/json");
 });
+
+
+/* afterAll(async () => {
+       await pool.end()
+})
+ */
